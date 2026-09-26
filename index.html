@@ -283,12 +283,13 @@
 
   @media(max-width:600px){
     .container{padding:0 16px;}
-    .nav-wrap{padding:12px 16px;}
-    .logo{font-size:1.05rem;}
+    .nav-wrap{padding:12px 16px;gap:8px;}
+    .logo{font-size:1.05rem;gap:8px;}
     .logo img{height:36px;width:36px;}
-    .logo span[data-en],.logo span[data-kn]{font-size:.92rem;}
+    .logo span[data-en],.logo span[data-kn]{font-size:.92rem;white-space:normal;}
     .logo span{font-size:.72rem;}
-    .lang-toggle{padding:7px 12px;font-size:.78rem;}
+    .lang-toggle{padding:7px 12px;font-size:.78rem;flex-shrink:0;}
+    .hamburger{flex-shrink:0;}
     .hero{min-height:78vh;}
     .hero-inner{padding:30px 16px;}
     .hero h1{font-size:1.7rem;}
@@ -305,6 +306,16 @@
     .cta-banner h2{font-size:1.4rem;}
     .popup-box{padding:24px 18px;}
     .map-embed,.map-embed iframe{min-height:240px;}
+  }
+
+  @media(max-width:380px){
+    .nav-wrap{padding:10px 12px;gap:6px;}
+    .logo{gap:6px;}
+    .logo img{height:32px;width:32px;}
+    .logo span[data-en],.logo span[data-kn]{font-size:.82rem;}
+    .logo span{font-size:.66rem;}
+    .lang-toggle{padding:6px 10px;font-size:.72rem;}
+    .hamburger span{width:22px;}
   }
 </style>
 </head>
@@ -356,7 +367,7 @@
     <p class="sub" data-en>Fresh food, warm hospitality, and a comfortable break on your journey — open daily 11 AM to 11:30 PM.</p>
     <p class="sub" data-kn>ತಾಜಾ ಆಹಾರ, ಆತ್ಮೀಯ ಆತಿಥ್ಯ ಮತ್ತು ನಿಮ್ಮ ಪ್ರಯಾಣದಲ್ಲಿ ಆರಾಮದಾಯಕ ವಿರಾಮ — ಪ್ರತಿದಿನ ಬೆಳಿಗ್ಗೆ 11 ರಿಂದ ರಾತ್ರಿ 11:30 ರವರೆಗೆ ತೆರೆದಿರುತ್ತದೆ.</p>
     <div class="btn-row">
-      <a href="https://wa.me/91XXXXXXXXXX?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20Hotel%20Sai%20Priya%20Palace" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+      <a href="https://wa.me/919110289722?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20Hotel%20Sai%20Priya%20Palace" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
         📱 <span data-en>WhatsApp Us</span><span data-kn>ವಾಟ್ಸಪ್ ಮಾಡಿ</span>
       </a>
       <a href="#menu" class="btn btn-outline">
@@ -522,8 +533,8 @@
         <div class="icon">📞</div>
         <div>
           <h4 data-en>Contact</h4><h4 data-kn>ಸಂಪರ್ಕ</h4>
-          <p data-en>WhatsApp for bookings & inquiries</p>
-          <p data-kn>ಬುಕಿಂಗ್ ಮತ್ತು ವಿಚಾರಣೆಗಾಗಿ ವಾಟ್ಸಪ್ ಮಾಡಿ</p>
+          <p data-en>WhatsApp for bookings & inquiries — +91 91102 89722</p>
+          <p data-kn>ಬುಕಿಂಗ್ ಮತ್ತು ವಿಚಾರಣೆಗಾಗಿ ವಾಟ್ಸಪ್ ಮಾಡಿ — +91 91102 89722</p>
         </div>
       </div>
       <div class="highway-tip">
@@ -543,7 +554,7 @@
   <h2 data-kn>ಹಸಿವಾಗಿದೆಯೇ? ನಾವು ಒಂದೇ ಸಂದೇಶ ದೂರದಲ್ಲಿದ್ದೇವೆ</h2>
   <p data-en>Reach out on WhatsApp for table bookings, takeaway orders, or menu queries.</p>
   <p data-kn>ಟೇಬಲ್ ಬುಕಿಂಗ್, ಟೇಕ್‌ಅವೇ ಆರ್ಡರ್ ಅಥವಾ ಮೆನು ವಿಚಾರಣೆಗಾಗಿ ವಾಟ್ಸಪ್‌ನಲ್ಲಿ ಸಂಪರ್ಕಿಸಿ.</p>
-  <a href="https://wa.me/91XXXXXXXXXX" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+  <a href="https://wa.me/919110289722" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
     📱 <span data-en>Chat on WhatsApp</span><span data-kn>ವಾಟ್ಸಪ್‌ನಲ್ಲಿ ಚಾಟ್ ಮಾಡಿ</span>
   </a>
 </div>
@@ -570,7 +581,7 @@
       <ul>
         <li>📍 M.K. Hubli, Karnataka 591118</li>
         <li>🕒 11:00 AM – 11:30 PM</li>
-        <li>📱 WhatsApp: +91-XXXXXXXXXX</li>
+        <li>📱 WhatsApp: +91 91102 89722</li>
       </ul>
     </div>
   </div>
@@ -580,7 +591,7 @@
 </footer>
 
 <!-- WhatsApp Floating Button -->
-<a href="https://wa.me/91XXXXXXXXXX" class="wa-float" target="_blank" rel="noopener noreferrer">💬</a>
+<a href="https://wa.me/919110289722" class="wa-float" target="_blank" rel="noopener noreferrer">💬</a>
 
 <!-- Google Review Popup -->
 <div class="popup-overlay" id="reviewPopup">
